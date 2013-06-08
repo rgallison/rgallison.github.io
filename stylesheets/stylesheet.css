@@ -429,3 +429,12 @@ Small Device Styles
   }
 
 }
+.description {
+    font-size: 75%;
+}
+
+.pending {
+  font-size: 75%;
+  float: right;
+  font-style: italic;
+}
