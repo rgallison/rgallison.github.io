@@ -11,12 +11,7 @@
 
     <title>Renee Gallison</title>
   </head>
-
-	<?php include('header.php'); ?>
-
 	<body>
-
+		<?php include_once('header.php'); ?>
 	</body>
-
-	
 </html>
