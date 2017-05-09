@@ -125,6 +125,11 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
+.active a {
+    color: white;
+    text-decoration: underline;
+}
+
 #main_content a:hover {
   color: #0069ba;
   text-shadow: #0090ff 0px 0px 2px;
@@ -150,6 +155,7 @@ img {
   padding: 5px;
   margin: 10px 0 10px 0;
   border: 1px solid #ebebeb;
+  box-sizing: border-box;
 
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
