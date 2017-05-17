@@ -1,7 +1,7 @@
-/* ----------------------------------------- Element Styling ----- */
-
+/* ------------------------------------- Element Styling ----- */
 section:not(:last-child) {
-	background: url(../images/bg_hr.png) repeat-x bottom;
+	background: url(../images/bg_hr.png) repeat-x;
+	background-position-y: 101.5%; 
     padding-bottom: 3px;
 }
 
@@ -115,7 +115,7 @@ button.view-btn:focus {
 	opacity: 01;
 }
 
-/* ----------------------------------------- Individual Portfolio Item Page ----- */
+/* ------------------------------------- Individual Portfolio Item Page ----- */
 .details {
 	display: flex;
 	justify-content: space-between;
