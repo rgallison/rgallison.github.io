@@ -1,20 +1,93 @@
+/* ----------------------------------------- Element Styling ----- */
+
+section:not(:last-child) {
+	background: url(../images/bg_hr.png) repeat-x bottom;
+    padding-bottom: 3px;
+}
+
+/* ----- Buttons ----- */
+button {
+    border: 2px solid #212121;
+    border-radius: 5px;
+    background: transparent;
+	color: #212121;
+    padding: 6px 12px;
+    font-size: 13px;
+    text-transform: uppercase;
+    position: relative;
+}
+button:hover {
+	background: #212121;
+    color: white;
+}
+button:active {
+	top: 2px;
+}
+button:focus {
+	outline: none;
+	box-shadow: 0px 0px 5px #212121;
+}
+button.primary,
+button.view-btn {
+    border: 2px solid #007edf;
+	background: transparent;
+	color: #007edf;
+}
+button.primary:hover {
+	background: #007edf;
+    color: white;
+}
+button.primary:focus {
+	outline: none;
+	box-shadow: 0px 0px 5px #007edf;
+}
+button.white,
+button.view-btn {
+    border: 2px solid white;
+	background: transparent;
+	color: white
+}
+button.view-btn {
+	margin: 10px;
+}
+button.white:hover {
+	background: white;
+    color: transparent;
+}
+button.view-btn:hover {
+	background: white;
+    color: rgba(0,0,0,0.6);
+}
+button.white:focus,
+button.view-btn:focus {
+	outline: none;
+	box-shadow: 0px 0px 5px white;
+}
+
+/* ----------------------------------------- Main Portfolio Page ----- */
+
 .portfolio {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .portfolio .portfolio-item {
- 	width: calc(50%);
+ 	width: 50%;
     padding: 5px;
     box-sizing: border-box;
     font-size: 0;
     position: relative;
+    overflow: hidden;
+}
+.portfolio .portfolio-item.small {
+ 	width: 25%;
 }
 .portfolio .portfolio-item img {
 	margin: 0;
+	transition: transform 200ms;
 }
 .portfolio-item .blurb {
-	display: none;
+	opacity: 0;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -25,9 +98,10 @@
 	padding: 20px;
 	box-sizing: border-box;
 	text-align: center;
+	transition: opacity 300ms;
 }
 .portfolio-item .blurb .title {
-	font-size: 20px;
+	font-size: 18px;
 	padding-bottom: 10px;
 }
 .portfolio-item .blurb .description {
@@ -35,7 +109,33 @@
 }
 .portfolio .portfolio-item:hover img {
 	filter: blur(5px);
+	transform: scale(1.1);
 }
 .portfolio .portfolio-item:hover .blurb {
-	display: block;
+	opacity: 01;
+}
+
+/* ----------------------------------------- Individual Portfolio Item Page ----- */
+.details {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px auto;
+    align-items: flex-end;
+}
+.details > :first-child {
+	flex: 1;
+}
+.details > :last-child {
+	margin-left: 5px;
+}
+.description {
+	font-size: inherit;
+}
+
+.gallery > * {
+	width: 100%;
+}
+
+.gallery > iframe {
+	height: 34vw;
 }
