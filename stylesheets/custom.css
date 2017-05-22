@@ -64,7 +64,9 @@ button.view-btn:focus {
 	box-shadow: 0px 0px 5px white;
 }
 
-/* ----------------------------------------- Main Portfolio Page ----- */
+/* ----------------------------------------- Main Page ----- */
+
+/* ----------------------------------------- Portfolio Page ----- */
 
 .portfolio {
 	display: flex;
@@ -78,6 +80,9 @@ button.view-btn:focus {
     font-size: 0;
     position: relative;
     overflow: hidden;
+}
+.portfolio .portfolio-item:hover {
+    box-shadow: 0px 0px 5px 1px #848484;
 }
 .portfolio .portfolio-item.small {
  	width: 25%;
@@ -138,4 +143,10 @@ button.view-btn:focus {
 
 .gallery > iframe {
 	height: 34vw;
+}
+
+/* ------------------------------------- Generic Helper Classes ----- */
+
+.hidden {
+	visibility: hidden;
 }
