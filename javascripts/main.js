@@ -61,7 +61,7 @@ function typewriter(el, text)
 	 		speed = Math.floor(Math.random() * 101) + 5;
 	 		callAgain = true;
 	 	}
-	 	console.log(speed);
+
 	 	if( callAgain ){
 		 	setTimeout(function(){
 				reTypewriter(el, text);
@@ -75,5 +75,10 @@ setTimeout(function(){
 	typewriter("welcome", aText);
 	setTimeout(function(){
 		typewriter("greeting", bText);
+		setTimeout(function(){
+			Array.from(document.getElementsByClassName("fade-in")).forEach(function(e){
+				e.classList.remove("hidden");
+			});
+		}, 10000);
 	}, 1200);
 }, 500);

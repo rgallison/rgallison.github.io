@@ -145,8 +145,33 @@ button.view-btn:focus {
 	height: 34vw;
 }
 
+
 /* ------------------------------------- Generic Helper Classes ----- */
 
 .hidden {
 	visibility: hidden;
+}
+
+
+/* ------------------------------------- Animations ----- */
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn .5s ease-in 1 forwards;
+  animation: fadeIn .5s ease-in 1 forwards;
+}
+
+.hidden {
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
