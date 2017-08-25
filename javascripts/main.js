@@ -58,7 +58,7 @@ function typewriter(el, text)
 	   			callAgain = true;
 	  		}
 	 	} else {
-	 		speed = Math.floor(Math.random() * 101) + 5;
+	 		speed = Math.floor(Math.random() * 80) + 5;
 	 		callAgain = true;
 	 	}
 
